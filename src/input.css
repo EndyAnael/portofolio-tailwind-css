@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .navbar-fixed{
-    @apply fixed z-[9999] backdrop-blur-sm shadow-lg
+    @apply fixed z-[9999] backdrop-blur-sm shadow-lg dark:text-white dark:bg-dark dark:opacity-80
 }
 
 .hamburger-line{
-    @apply w-[30px] h-[2px] my-2 block bg-dark
+    @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-white
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -20,6 +20,6 @@
     @apply rotate-45 
 }
 
-@media (max-width:390px){
-    
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3
 }
